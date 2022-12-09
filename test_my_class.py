@@ -6,10 +6,10 @@ from my_utility_class import MyUtilityClass
 
 class TestMyUtilityClass(unittest.TestCase):
 	def mock_get_first_name(self):
-		return "Abdul"
+		return "first-name"
 
 	def mock_get_last_name(self):
-		return "Latif"
+		return "last-name"
 
 	@patch('my_utility_class.NameService')
 	def test__get_name__return_correct_name__given_a_name(self, mock_name_service: Mock):
